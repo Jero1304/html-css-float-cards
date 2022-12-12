@@ -32,30 +32,38 @@ header h1{
     margin: 20px;
 }
 .col{
-    width: calc(100%/6);
+    width: 250px;
     float: left;
     margin-right: 5%;
+    margin-bottom: 10%;
+    background-color:black;
 }
+
+.info{
+    float: left;   
+    margin: 5px 5px 5px 5px;
+}
+
 .card{
-    background-color: #191970;
-    border: 1px solid black;
-    float: left;
     margin-right: 5%;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 .card img{
-    height: 60px;
+    float: left;
+    height: 70px;
 }
 .card-name{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     color: white;
 }
 .card-job{
-    font-size: 10px;
+    font-size: 14px;
     color: white;
 }
 .card-contact{
-    font-size: 10px;
+    font-size: 14px;
     color: cornflowerblue;
 }
