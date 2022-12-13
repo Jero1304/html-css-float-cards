@@ -3,67 +3,88 @@
     margin: 0;
     padding: 0;
 }
-
-main{
-    padding: 48px 0;
-}
-
 img{
     max-width: 100%;
 }
+
+body{
+    font-family: 'Fredoka One', sans-serif;
+}
+
 .clearfix::after{
     content: '';
-    display: block;
+    display: table;
     clear: both;
 }
 
-header h1{
-    color: red;
+.title{
+    font-family: 'Fredoka One', sans-serif;
+    color: #e53170;
+}
+
+h2.title{
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.text-center{
     text-align: center;
-    margin: 30px;
+}
+
+.section{
+    padding: 32px 0;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 12px 0;
 }
-.paragrafo{
-    margin: 20px;
+
+.container + .container{
+    margin-top: 48px;
 }
+
+
+
+.row-cols-3 > .col{
+    width: calc((100%-60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.row-cols-3 > .col:nth-child(3n){
+    margin-right: 0;
+}
+
 .col{
-    width: 250px;
-    float: left;
-    margin-right: 5%;
-    margin-bottom: 10%;
-    background-color:black;
-}
-
-.info{
     float: left;   
-    margin: 5px 5px 5px 5px;
 }
 
-.card{
-    margin-right: 5%;
-    margin-bottom: 20px;
-    width: 300px;
+/* team card */
+.team-card{
+    min-height: 90px;
+    /* min-width: 90px; */
+    background-color: black;
+    color: white;
+    overflow: hidden;
 }
-
-.card img{
+.team-card > *{
     float: left;
-    height: 70px;
 }
-.card-name{
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+
+.team-thumb{
+    width: 90px;
 }
-.card-job{
-    font-size: 14px;
-    color: white;
+
+.team-thumb img{
+    display: block;
 }
-.card-contact{
-    font-size: 14px;
-    color: cornflowerblue;
+
+.team-name{
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.team-info{
+    width: calc(100%-90px);
+    padding: 8px 0 8px 12px;
 }
